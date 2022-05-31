@@ -1,0 +1,3 @@
+modoboa>=1.3.4
+rfc6266
+progressbar==2.3

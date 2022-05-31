@@ -1,0 +1,824 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Antoine Nguyen <tonio@ngyn.org>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Modoboa\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-09 10:30+0200\n"
+"PO-Revision-Date: 2015-09-09 08:33+0000\n"
+"Last-Translator: Antoine Nguyen <tonio@ngyn.org>\n"
+"Language-Team: French (http://www.transifex.com/tonio/modoboa/language/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: app_settings.py:15 templates/modoboa_admin/editdomainform.html:25
+msgid "Mailboxes"
+msgstr "Boites"
+
+#: app_settings.py:18
+msgid "Handle mailboxes on filesystem"
+msgstr "Gérer les boites sur le système de fichiers"
+
+#: app_settings.py:21
+msgid ""
+"Rename or remove mailboxes on the filesystem when they get renamed or "
+"removed within Modoboa"
+msgstr "Renommer ou supprimer les boites sur le système de fichiers quand elles sont renommées ou supprimées dans Modoboa"
+
+#: app_settings.py:27
+msgid "Mailboxes owner"
+msgstr "Propriétaire des boites"
+
+#: app_settings.py:30
+msgid "The UNIX account who owns mailboxes on the filesystem"
+msgstr "Le compte UNIX qui possède les boites sur le système de fichiers"
+
+#: app_settings.py:35
+msgid "Default domain quota"
+msgstr "Quota de domaine par défaut"
+
+#: app_settings.py:38
+msgid ""
+"Default quota (in MB) applied to freshly created domains with no value "
+"specified. A value of 0 means no quota."
+msgstr "Quota par défaut (en Mo) appliqué aux domaines fraichement créés et ne spécifiant pas de valeur. 0 signifie qu'aucun quota ne sera appliqué."
+
+#: app_settings.py:44
+msgid "Automatic account removal"
+msgstr "Suppression automatique de compte"
+
+#: app_settings.py:47
+msgid "When a mailbox is removed, also remove the associated account"
+msgstr "Lorsqu'une boite aux lettres est supprimée, supprimer le compte associé en même temps"
+
+#: app_settings.py:51
+msgid "Automatic domain/mailbox creation"
+msgstr "Création automatique de domaine/boite aux lettres"
+
+#: app_settings.py:54
+msgid ""
+"Create a domain and a mailbox when an account is automatically created."
+msgstr "Créer un domaine et une boite aux lettres quand un compte est créé automatiquement."
+
+#: app_settings.py:100 forms/account.py:237 forms/domain.py:77
+msgid "Must be a positive integer"
+msgstr "Doit être un entier positif"
+
+#: forms/account.py:30 templates/modoboa_admin/editdomainform.html:13
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: forms/account.py:32
+msgid ""
+"The user's name. Must be a valid e-mail address for simple users or "
+"administrators with a mailbox."
+msgstr "Le nom de l'utilisateur. Doit être une adresse e-mail valide pour les utilisateurs simples ou les administrateurs avec une boite aux lettres."
+
+#: forms/account.py:37
+msgid "Role"
+msgstr "Rôle"
+
+#: forms/account.py:38 forms/account.py:75
+msgid "Choose"
+msgstr "Choisir"
+
+#: forms/account.py:39
+msgid "What level of permission this user will have"
+msgstr "Quel niveau de permission cet utilisateur aura"
+
+#: forms/account.py:42
+msgid "Password"
+msgstr "Mot de passe"
+
+#: forms/account.py:45
+msgid "Confirmation"
+msgstr "Confirmation"
+
+#: forms/account.py:48
+msgid "Enter the same password as above, for verification."
+msgstr "Entrer le même mot de passe, pour vérification."
+
+#: forms/account.py:66
+msgid "Enabled"
+msgstr "Activé"
+
+#: forms/account.py:139
+msgid "Only super administrators are allowed for this mode"
+msgstr "Seuls les super administrateurs sont autorisés pour ce mode"
+
+#: forms/account.py:148
+msgid "The two password fields didn't match."
+msgstr "Les deux mots de passe ne correspondent pas."
+
+#: forms/account.py:154
+msgid "You can't disable your own account"
+msgstr "Vous ne pouvez pas désactiver votre propre compte"
+
+#: forms/account.py:168
+msgid "E-mail"
+msgstr "E-mail"
+
+#: forms/account.py:170 forms/domain.py:35
+msgid "Quota"
+msgstr "Quota"
+
+#: forms/account.py:172
+msgid ""
+"Quota in MB for this mailbox. Define a custom value or use domain's default "
+"one. Leave empty to define an unlimited value (not allowed for domain "
+"administrators)."
+msgstr "Quota en Mo pour cette boite. Définir une valeur spécifique ou utiliser la valeur par défaut du domaine. Laisser vide pour définir une valeur illimitée (interdit pour les admins. de domaine)."
+
+#: forms/account.py:180 forms/domain.py:43
+#: templates/modoboa_admin/domains.html:26
+msgid "Alias(es)"
+msgstr "Alias"
+
+#: forms/account.py:183
+msgid ""
+"Alias(es) of this mailbox. Indicate only one address per input, press ENTER "
+"to add a new input. Use the '*' character to create a 'catchall' alias (ex: "
+"*@domain.tld)."
+msgstr "Alias de cette boite. Indiquer seulement une adresse par champ, appuyer sur ENTREE pour ajouter un nouveau champ. Utiliser le caractère '*' pour créer une adresse 'attrape tout' (ex: *@domain.tld)."
+
+#: forms/account.py:246 forms/account.py:277 forms/alias.py:72
+msgid "Domain does not exist"
+msgstr "Domaine inexistant"
+
+#: forms/account.py:255 modo_extension.py:229
+#, python-format
+msgid "Mailbox %s already exists"
+msgstr "La boite %s existe déjà"
+
+#: forms/account.py:353
+msgid "Domain(s)"
+msgstr "Domaine(s)"
+
+#: forms/account.py:355
+msgid "Domain(s) that user administrates"
+msgstr "Domaine(s) que cet utilisateur administre"
+
+#: forms/account.py:399 forms/account.py:485 forms/domain.py:300
+#: forms/domain.py:370
+msgid "General"
+msgstr "Général"
+
+#: forms/account.py:404 forms/account.py:491
+msgid "Mail"
+msgstr "Courrier"
+
+#: forms/account.py:407
+msgid "Permissions"
+msgstr "Permissions"
+
+#: forms/account.py:474
+msgid "Account updated"
+msgstr "Compte mis à jour"
+
+#: forms/account.py:498
+msgid "New account"
+msgstr "Nouveau compte"
+
+#: forms/account.py:510
+msgid "Account created"
+msgstr "Compte créé"
+
+#: forms/alias.py:23
+msgid "Email address"
+msgstr "Adresse email"
+
+#: forms/alias.py:25
+msgid ""
+"The alias address. To create a catchall alias, just enter the domain name "
+"(@domain.tld)."
+msgstr "L'adresse de l'alias. Pour créer un alias \"fourre-tout\", saisissez uniquement le nom du domaine (@domain.tld)."
+
+#: forms/alias.py:31
+msgid "Recipients"
+msgstr "Destinataires"
+
+#: forms/alias.py:33
+msgid ""
+"Addresses this alias will point to. Indicate only one address per input, "
+"press ENTER to add a new input."
+msgstr "Les adresses vers lesquelles cet alias pointera. Indiquer une adresse par champ, appuyer sur ENTREE pour ajouter un nouveau champ."
+
+#: forms/alias.py:75
+msgid "You don't have access to this domain"
+msgstr "Vous n'avez pas accès à ce domaine"
+
+#: forms/alias.py:85
+msgid "No recipient defined"
+msgstr "Aucune destinataire défini"
+
+#: forms/domain.py:22 models/domain.py:75
+#: templates/modoboa_admin/domain_statistics.html:49
+msgid "Domain"
+msgstr "Domaine"
+
+#: forms/domain.py:32 templates/modoboa_admin/domain_statistics.html:26
+msgid "Type"
+msgstr "Type"
+
+#: forms/domain.py:38
+msgid ""
+"Default quota in MB applied to mailboxes. Leave empty to use the default "
+"value."
+msgstr "Quota par défaut en Mo appliqué aux boites aux lettres. Laisser vide pour utiliser la valeur par défaut."
+
+#: forms/domain.py:46
+msgid ""
+"Alias(es) of this domain. Indicate only one name per input, press ENTER to "
+"add a new input."
+msgstr "Alias de ce domaine. Indiquer seulement un nom par champ, appuyer sur ENTREE pour ajouter un nouveau champ."
+
+#: forms/domain.py:94 modo_extension.py:272
+msgid "domain alias"
+msgstr "alias de domaine"
+
+#: forms/domain.py:97 forms/domain.py:108 forms/domain.py:116
+#, python-format
+msgid "A %s with this name already exists"
+msgstr "Un %s de ce nom existe déjà"
+
+#: forms/domain.py:108 forms/domain.py:113
+msgid "domain"
+msgstr "domaine"
+
+#: forms/domain.py:200
+msgid "Create a domain administrator"
+msgstr "Créer un administrateur de domaine"
+
+#: forms/domain.py:203
+msgid "Automatically create an administrator for this domain"
+msgstr "Créer automatiquement un administrateur pour ce domaine"
+
+#: forms/domain.py:208 templates/modoboa_admin/domains.html:25
+#: templates/modoboa_admin/editdomainform.html:13
+#: templates/modoboa_admin/identity_headers.html:2
+msgid "Name"
+msgstr "Nom"
+
+#: forms/domain.py:211
+msgid ""
+"The administrator's name. Don't include the domain's name here, it will be "
+"automatically appended."
+msgstr "Le nom de l'administrateur. Ne pas include un nom de domaine ici, il sera ajouté automatiquement."
+
+#: forms/domain.py:218
+msgid "Create aliases"
+msgstr "Créer des alias"
+
+#: forms/domain.py:221
+msgid "Automatically create standard aliases for this domain"
+msgstr "Créer automatiquement des alias standard pour ce domaine"
+
+#: forms/domain.py:240
+msgid "Invalid format"
+msgstr "Format invalide"
+
+#: forms/domain.py:257
+#, python-format
+msgid "User '%s' already exists"
+msgstr "L'utilisateur '%s' existe déjà"
+
+#: forms/domain.py:359
+msgid "Domain modified"
+msgstr "Domaine modifié"
+
+#: forms/domain.py:379
+msgid "Options"
+msgstr "Options"
+
+#: forms/domain.py:387
+msgid "New domain"
+msgstr "Nouveau domaine"
+
+#: forms/domain.py:405
+msgid "Domain created"
+msgstr "Domaine créé"
+
+#: forms/export.py:7
+msgid "File name"
+msgstr "Nom du fichier"
+
+#: forms/export.py:13 forms/import_.py:13
+msgid "Separator"
+msgstr "Séparateur"
+
+#: forms/forward.py:14
+msgid "Recipient(s)"
+msgstr "Destinataire(s)"
+
+#: forms/forward.py:18
+msgid "Indicate one or more recipients separated by a ','"
+msgstr "Indiquer un ou plusieurs destinataires séparés par une ','"
+
+#: forms/forward.py:21
+msgid "Keep local copies"
+msgstr "Conserver des copies locales"
+
+#: forms/forward.py:24
+msgid "Forward messages and store copies into your local mailbox"
+msgstr "Transférer les messages et conserver une copie dans votre boite locale"
+
+#: forms/forward.py:42
+msgid ""
+"You can't define a forward to a local destination. Please ask your "
+"administrator to create an alias instead."
+msgstr "Vous ne pouvez pas définir un transfert vers une destination locale. Veuillez plutôt demander à votre administrateur de créer un alias"
+
+#: forms/import_.py:11
+msgid "Select a file"
+msgstr "Sélectionner un fichier"
+
+#: forms/import_.py:19
+msgid "Continue on error"
+msgstr "Continuer en cas d'erreur"
+
+#: forms/import_.py:20
+msgid "Don't treat duplicated objects as error"
+msgstr "Ne pas traiter les objets dupliqués comme des erreurs"
+
+#: forms/import_.py:38
+msgid "Crypt passwords"
+msgstr "Chiffrer les mots de passe"
+
+#: forms/import_.py:40
+msgid "Check this option if passwords contained in your file are not crypted"
+msgstr "Cocher cette option si les mots de passe contenus dans votre fichier ne sont pas chiffrés"
+
+#: lib.py:30
+msgid "A mailbox is required"
+msgstr "Une boite aux lettres est requise"
+
+#: lib.py:120
+msgid "You are not allowed to import domains"
+msgstr "Vous n'êtes pas autorisé à importer des domaines"
+
+#: lib.py:129
+msgid "You are not allowed to import domain aliases."
+msgstr "Vous n'êtes pas autorisé à importer des alias de domaine."
+
+#: models/alias.py:26 models/mailbox.py:78
+msgid "address"
+msgstr "Adresse"
+
+#: models/alias.py:28
+msgid "The alias address."
+msgstr "L'adresse de l'alias"
+
+#: models/alias.py:33 models/domain.py:37 models/domain_alias.py:24
+msgid "enabled"
+msgstr "Activé"
+
+#: models/alias.py:34 models/domain_alias.py:25
+msgid "Check to activate this alias"
+msgstr "Cocher pour activer cet alias"
+
+#: models/alias.py:80
+msgid "distribution list"
+msgstr "liste de distribution"
+
+#: models/alias.py:81
+msgid "forward"
+msgstr "transfert"
+
+#: models/alias.py:82
+msgid "alias"
+msgstr "alias"
+
+#: models/alias.py:113
+msgid "Invalid address"
+msgstr "Adresse invalide"
+
+#: models/alias.py:134
+msgid "Local recipient {}@{} not found"
+msgstr "Destinataire local {}@{} introuvable"
+
+#: models/alias.py:163
+#, python-format
+msgid "Invalid line: %s"
+msgstr "Ligne invalide : %s"
+
+#: models/alias.py:169
+#, python-format
+msgid "Domain '%s' does not exist"
+msgstr "Domaine '%s' inexistant"
+
+#: models/domain.py:33 models/domain_alias.py:17
+msgid "name"
+msgstr "Nom"
+
+#: models/domain.py:34
+msgid "The domain name"
+msgstr "Le nom du domaine"
+
+#: models/domain.py:38
+msgid "Check to activate this domain"
+msgstr "Cocher pour activer ce domaine"
+
+#: models/domain.py:159 models/domain_alias.py:48
+msgid "Invalid line"
+msgstr "Ligne invalide"
+
+#: models/domain.py:167
+#, python-format
+msgid "Invalid quota value for domain '%s'"
+msgstr "Quota invalide pour le domaine '%s'"
+
+#: models/domain_alias.py:18
+msgid "The alias name"
+msgstr "Le nom de l'alias"
+
+#: models/domain_alias.py:20
+msgid "target"
+msgstr "cible"
+
+#: models/domain_alias.py:21
+msgid "The domain this alias points to"
+msgstr "Le domaine vers lequel cet alias pointe"
+
+#: models/domain_alias.py:57
+#, python-format
+msgid "Unknown domain %s"
+msgstr "Domaine %s inconnu"
+
+#: models/mailbox.py:80
+msgid "Mailbox address (without the @domain.tld part)"
+msgstr "Adresse de la boite aux lettres (sans la partie @domain.tld)"
+
+#: models/mailbox.py:143
+#, python-format
+msgid "Failed to retrieve mailbox location (%s)"
+msgstr "Impossible de récuperer l'emplacement de la boite (%s)"
+
+#: models/mailbox.py:228
+#, python-format
+msgid "Quota is greater than the allowed domain's limit (%dM)"
+msgstr "Le quota est supérieur à la limité autorisée pour le domaine (%dM)"
+
+#: models/mailbox.py:234
+msgid "A quota is required"
+msgstr "Un quota est requis"
+
+#: modo_extension.py:76
+msgid "Administration console"
+msgstr "Console d'administration"
+
+#: modo_extension.py:79
+msgid "Web based console to manage domains, accounts and aliases"
+msgstr "Console web pour gérer les domains, comptes et alias"
+
+#: modo_extension.py:88
+msgid "Administration"
+msgstr "Administration"
+
+#: modo_extension.py:102
+msgid "Domain administrator"
+msgstr "Administrateur de domaine"
+
+#: modo_extension.py:131 templates/modoboa_admin/domain_statistics.html:30
+#: templates/modoboa_admin/domains.html:3
+msgid "Domains"
+msgstr "Domaines"
+
+#: modo_extension.py:141 templates/modoboa_admin/domain_statistics.html:36
+#: templates/modoboa_admin/domain_statistics.html:50
+#: templates/modoboa_admin/identities.html:5
+msgid "Identities"
+msgstr "Identités"
+
+#: modo_extension.py:156 templates/modoboa_admin/forward.html:2
+msgid "Forward"
+msgstr "Transfert"
+
+#: modo_extension.py:219
+#, python-format
+msgid "Account import failed (%s): domain does not exist"
+msgstr "L'import du compte a échoué (%s): le domaine n'existe pas"
+
+#: modo_extension.py:237
+#, python-format
+msgid "Account import failed (%s): wrong quota value"
+msgstr "L'import du compte a échoué (%s): mauvais quota"
+
+#: templates/modoboa_admin/account_general_form.html:11
+#: templates/modoboa_admin/aliasform.html:8
+msgid "Domain is disabled"
+msgstr "Le domaine est désactivé"
+
+#: templates/modoboa_admin/domain_general_form.html:4
+#: templates/modoboa_admin/mailform.html:3
+#: templates/modoboa_admin/newdomainform.html:3
+msgid "MB"
+msgstr "Mo"
+
+#: templates/modoboa_admin/domain_options_form.html:7
+msgid "You can't create a new domain administrator"
+msgstr "Vous ne pouvez pas créer de nouvel administrateur de domaine"
+
+#: templates/modoboa_admin/domain_statistics.html:15
+#: templatetags/admin_tags.py:45
+msgid "Statistics"
+msgstr "Statistiques"
+
+#: templates/modoboa_admin/domain_statistics.html:15
+msgid "Domains and identities"
+msgstr "Domaines et identités"
+
+#: templates/modoboa_admin/domain_statistics.html:22
+msgid "Global counters"
+msgstr "Compteurs globaux"
+
+#: templates/modoboa_admin/domain_statistics.html:27
+msgid "Quantity"
+msgstr "Quantité"
+
+#: templates/modoboa_admin/domain_statistics.html:33
+#: templates/modoboa_admin/editdomainform.html:24
+msgid "Domain aliases"
+msgstr "Alias de domaine"
+
+#: templates/modoboa_admin/domain_statistics.html:45
+msgid "Per-domain counters"
+msgstr "Compteurs par domaine"
+
+#: templates/modoboa_admin/domains.html:27
+#: templates/modoboa_admin/identity_headers.html:4
+msgid "Tags"
+msgstr "Tags"
+
+#: templates/modoboa_admin/domains.html:28
+#: templates/modoboa_admin/identity_headers.html:5
+msgid "Actions"
+msgstr "Actions"
+
+#: templates/modoboa_admin/domains_table.html:4
+msgid "disabled"
+msgstr "Desactivé"
+
+#: templates/modoboa_admin/editdomainform.html:4
+msgid "Administrators"
+msgstr "Administrateurs"
+
+#: templates/modoboa_admin/editdomainform.html:7
+msgid "Miscellaneous"
+msgstr "Divers"
+
+#: templates/modoboa_admin/editdomainform.html:19
+msgid "No domain administrator defined"
+msgstr "Aucun administrateur de domaine défini"
+
+#: templates/modoboa_admin/editdomainform.html:22
+msgid "Creation date"
+msgstr "Date de création"
+
+#: templates/modoboa_admin/editdomainform.html:23
+msgid "Last modification date"
+msgstr "Date de dernière modification"
+
+#: templates/modoboa_admin/editdomainform.html:26
+msgid "Mailbox aliases"
+msgstr "Alias de boite."
+
+#: templates/modoboa_admin/forward.html:2
+msgid "Automatically forward emails to another address"
+msgstr "Transférer automatiquement les messages vers une autre adresse"
+
+#: templates/modoboa_admin/forward.html:9 views/alias.py:113
+msgid "Update"
+msgstr "Mettre à jour"
+
+#: templates/modoboa_admin/identity_headers.html:3
+msgid "Fullname/Recipient"
+msgstr "Nom complet/Destinataire"
+
+#: templates/modoboa_admin/importform.html:6
+msgid "Help"
+msgstr "Aide"
+
+#: templates/modoboa_admin/importform.html:13
+msgid "Importing..."
+msgstr "Import en cours..."
+
+#: templates/modoboa_admin/mailboxes_raw.html:3
+msgid "Choose a value"
+msgstr "Choisir une valeur"
+
+#: templates/modoboa_admin/mailform.html:3
+msgid "Use domain default value"
+msgstr "Utiliser la valeur par défaut du domaine"
+
+#: templates/modoboa_admin/quota_headers.html:2
+msgid "Address"
+msgstr "Adresse"
+
+#: templates/modoboa_admin/quota_headers.html:3
+msgid "Value"
+msgstr "Valeur"
+
+#: templates/modoboa_admin/quota_headers.html:4
+msgid "Limit"
+msgstr "Limite"
+
+#: templates/modoboa_admin/quota_headers.html:5
+#, python-format
+msgid "Usage (%%)"
+msgstr "Utilisation (%%)"
+
+#: templates/modoboa_admin/searchform.html:6
+msgid "Search"
+msgstr "Chercher"
+
+#: templatetags/admin_tags.py:19
+msgid "enabled_m"
+msgstr "Activé"
+
+#: templatetags/admin_tags.py:19
+msgid "enabled_f"
+msgstr "Activée"
+
+#: templatetags/admin_tags.py:40
+msgid "List domains"
+msgstr "Lister les domaines"
+
+#: templatetags/admin_tags.py:53
+msgid "Add domain"
+msgstr "Ajouter un domaine"
+
+#: templatetags/admin_tags.py:62 templatetags/admin_tags.py:126
+#: views/import_.py:99 views/import_.py:133
+msgid "Import"
+msgstr "Importer"
+
+#: templatetags/admin_tags.py:68 templatetags/admin_tags.py:132
+#: views/export.py:41 views/export.py:69
+msgid "Export"
+msgstr "Exporter"
+
+#: templatetags/admin_tags.py:92
+msgid "List identities"
+msgstr "Lister les identités"
+
+#: templatetags/admin_tags.py:97
+msgid "List quotas"
+msgstr "Lister les quotas"
+
+#: templatetags/admin_tags.py:102
+msgid "Add account"
+msgstr "Ajouter un compte"
+
+#: templatetags/admin_tags.py:108
+msgid "Add alias"
+msgstr "Ajouter un alias"
+
+#: templatetags/admin_tags.py:114
+msgid "Add forward"
+msgstr "Ajouter un transfert"
+
+#: templatetags/admin_tags.py:120
+msgid "Add distribution list"
+msgstr "Ajouter une liste de distribution"
+
+#: templatetags/admin_tags.py:152
+msgid "View the domain's identities"
+msgstr "Voir les identités du domaine"
+
+#: templatetags/admin_tags.py:159 templatetags/admin_tags.py:182
+#: templatetags/admin_tags.py:190
+#, python-format
+msgid "Delete %s?"
+msgstr "Supprimer %s ?"
+
+#: templatetags/admin_tags.py:266
+msgid "Remove this permission"
+msgstr "Supprimer cette permission"
+
+#: views/alias.py:29
+msgid "Alias with this name already exists"
+msgstr "Un alias de ce nom existe déjà"
+
+#: views/alias.py:53
+msgid "Create"
+msgstr "Créer"
+
+#: views/alias.py:65
+msgid "New distribution list"
+msgstr "Nouvelle liste de distribution"
+
+#: views/alias.py:67
+msgid "Distribution list created"
+msgstr "Liste de distribution créée"
+
+#: views/alias.py:76
+msgid "New alias"
+msgstr "Nouvel alias"
+
+#: views/alias.py:77
+msgid "Alias created"
+msgstr "Alias créé"
+
+#: views/alias.py:86
+msgid "New forward"
+msgstr "Nouveau transfert"
+
+#: views/alias.py:87
+msgid "Forward created"
+msgstr "Transfert créé"
+
+#: views/alias.py:101
+msgid "Distribution list modified"
+msgstr "Liste de distribution modifiée"
+
+#: views/alias.py:103
+msgid "Forward modified"
+msgstr "Transfert modifié"
+
+#: views/alias.py:105
+msgid "Alias modified"
+msgstr "Alias modifié"
+
+#: views/domain.py:132
+msgid "You can't delete your own domain"
+msgstr "Vous ne pouvez pas supprimer votre propre domaine"
+
+#: views/domain.py:135
+msgid "Domain deleted"
+msgid_plural "Domains deleted"
+msgstr[0] "Domaine supprimé"
+msgstr[1] "Domaines supprimés"
+
+#: views/export.py:40
+msgid "Export identities"
+msgstr "Export d'identités"
+
+#: views/export.py:68
+msgid "Export domains"
+msgstr "Export de domaines"
+
+#: views/identity.py:108 views/identity.py:202 views/identity.py:207
+msgid "Invalid request"
+msgstr "Requête invalide"
+
+#: views/identity.py:192
+msgid "Account deleted"
+msgid_plural "Accounts deleted"
+msgstr[0] "Compte supprimé"
+msgstr[1] "Comptes supprimés"
+
+#: views/import_.py:64
+#, python-format
+msgid "Object already exists: %s"
+msgstr "L'objet existe déjà : %s"
+
+#: views/import_.py:68
+#, python-format
+msgid "%d objects imported successfully"
+msgstr "%d objets importés avec succès"
+
+#: views/import_.py:86
+#, python-format
+msgid ""
+"Provide a CSV file where lines respect one of the following formats:\n"
+"<ul>\n"
+"  <li><em>domain; name; quota; enabled</em></li>\n"
+"  <li><em>domainalias; name; targeted domain; enabled</em></li>\n"
+"  %s\n"
+"</ul>\n"
+"<p>The first element of each line is mandatory and must be equal to one of the previous values.</p>\n"
+"<p>You can use a different character as separator.</p>\n"
+msgstr "Fournir un fichier CSV ou chaque ligne respècte un des formats suivants :\n<ul>\n  <li><em>domain; nom; quota; activé</em></li>\n  <li><em>domainalias; nom; domaine cible; activé</em></li>\n  %s\n</ul>\n<p>Le premier élément de chaque ligne est obligatoire et doit être égal à l'une des valeurs précédentes.</p>\n<p>Vous pouvez utiliser un caractère différent comme séparateur.</p>\n"
+
+#: views/import_.py:98
+msgid "Import domains"
+msgstr "Importer des domaines"
+
+#: views/import_.py:120
+msgid ""
+"Provide a CSV file where lines respect one of the following formats:\n"
+"<ul>\n"
+"<li><em>account; loginname; password; first name; last name; enabled; group; address; quota; [, domain, ...]</em></li>\n"
+"<li><em>alias; address; enabled; internal recipient</em></li>\n"
+"<li><em>forward; address; enabled; external recipient</em></li>\n"
+"<li><em>dlist; address; enabled; recipient; recipient; ...</em></li>\n"
+"</ul>\n"
+"<p>The first element of each line is mandatory and must be equal to one of the previous values.</p>\n"
+"\n"
+"<p>You can use a different character as separator.</p>\n"
+msgstr "Fournir un fichier CSV ou chaque ligne respècte un des formats suivants :\n<ul>\n<li><em>account; identifiant; mot de passe; prénom; nom; activé, groupe; addresse; quota; [, domaine, ...]</em></li>\n<li><em>alias; addresse; activé; destinataire interne</em></li>\n<li><em>forward; addresse; activé; destinataire externe</em></li>\n<li><em>dlist; addresse; activée; destinataire; destinataire; ...</em></li>\n</ul>\n<p>Le premier élément de chaque ligne est obligatoire et doit être égal à l'une des valeurs précédentes.</p>\n\n<p>Vous pouvez utiliser un caractère différent comme séparateur.</p>\n"
+
+#: views/import_.py:132
+msgid "Import identities"
+msgstr "Importer des identités"
+
+#: views/user.py:34
+msgid "Forward updated"
+msgstr "Transfert mis à jour"
